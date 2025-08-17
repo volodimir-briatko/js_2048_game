@@ -46,7 +46,10 @@ function attachControlsOnce() {
 startButton.addEventListener('click', () => {
   game.start();
   attachControlsOnce();
-  document.querySelector('.message-start')?.classList.add('hidden');
+  document.querySelector('.message-start').classList.add('hidden');
+  document.querySelector('.message-lose').classList.add('hidden');
+  document.querySelector('.message-win').classList.add('hidden');
+  
 
   startButton.textContent = 'Restart';
   startButton.classList.remove('start');
