@@ -11,11 +11,6 @@ let controlsAttached = false;
 function onKeyDown(e) {
   const { key } = e;
 
-  // реагуємо лише на стрілки
-  if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(key)) {
-    return;
-  }
-
   // не даємо сторінці скролитись стрілками
   e.preventDefault();
 
